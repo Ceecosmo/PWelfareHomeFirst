@@ -16,8 +16,6 @@ Including another URLconf
 """
 
 from django.contrib import admin
-from django.config import settings
-from django.config.urls.static import static
 
 from django.urls import path, include
 from django.urls import path, include
@@ -34,6 +32,5 @@ urlpatterns = [
     path('contact/', include('contact.urls')),
   
 ]
-if settings.DEBUG:
-    urlpatterns+=static(settings.STATICFILES,document_root=settings.STATIC_ROOT)
+
 
