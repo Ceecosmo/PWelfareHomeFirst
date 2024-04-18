@@ -18,3 +18,4 @@ tzdata==2024.1
 urllib3==2.2.1
 virtualenv==20.25.1
 wheel==0.42.0
+gunicorn
